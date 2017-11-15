@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+    /* 포지셔닝 */
+    .mod {overflow: hidden;}
+    .modImg {float:left; width:140px; margin-right:10px;}
+    .modImg-title {display: block;}
+    .mod>li {margin-bottom: 7px;}
+    .modB-desc {margin: 5px 0 10px; display: block;}
+    .modImg-img{display: block;}
+    .ly-mod {width: 150px;}
+    .ly-modImg {position: relative; display: block;}
+    .ly-modImg-title {position: absolute; bottom: 0; left: 0; padding: 6px 7px 6px 9px;}
+    .modlist-clear{clear: left; padding-top: 5px;}
+    .dualImg {margin-right: 22px;}
+
+    /* 스타일링 */
+    li {display: block;}
+    .link {color: #000063; font-weight: bold; letter-spacing: -1px;}
+    .slink {font-size: 14px;}
+    .blink {font-size: 24px;}
+    .blink-desc {color: #4F4F4F; font-size: 12px; font-weight: normal; line-height: 1.4;}
+    .img-link {color: #4F4F4F;}
+    .img-link-desc {color: #4F4F4F; line-height: 1.4;} 
+    .ly-link-desc {color: #FFF; background-color: #000; opacity: 0.65;}
+</style>
+</head>
+<body>
+    <h1>표현과 구조의 분리</h1>
+    <p>1번 방식</p>
+    <ul class="mod">
+        <li class="modImg">
+            <a class="img-link">
+                <img width="140" height="85" class="modImg-img">
+                <span class="modImg-title img-link-desc">text sdfs afdasf asfasf</span>
+            </a>
+        </li>
+        <li><a href="#" class="link slink">text</a></li>
+        <li><a class="link slink">text sfsdfsd</a></li>
+        <li><a class="link slink">text sfsdfsd</a></li>
+        <li><a class="link slink">text sfsdf</a></li>
+        <li><a class="link slink">text</a></li>
+    </ul>
+    
+    <p>2번 방식</p>
+    <ul class="mod">
+        <li class="modImg ly-mod">
+            <a class="img-link ly-modImg">
+                <img width="140" height="85" class="modImg-img">
+                <span class="modImg-title img-link-desc ly-mod">text sdfs afdasf asfasf</span>
+            </a>
+        </li>
+        <li class="modB">
+            <a class="link blink">
+                텍스트
+                <span class="modB-desc blink-desc">ssfafsd</span>
+            </a>
+        </li>
+        <li><a href="#" class="link slink">text</a></li>
+        <li><a class="link slink">text sfsdfsd</a></li>
+        <li><a class="link slink">text sfsdfsd</a></li>
+    </ul>
+
+    <p>3번 방식</p>
+    <ul class="mod">
+        <li class="modImg dualImg">
+            <a class="img-link">
+                <img width="140" height="85" class="modImg-img">
+                <span class="modImg-title img-link-desc">text sdfs afdasf asfasf</span>
+            </a>
+        </li>
+        <li class="modImg">
+                <a class="img-link">
+                    <img width="140" height="85" class="modImg-img">
+                    <span class="modImg-title img-link-desc">text sdfs afdasf asfasf</span>
+                </a>
+            </li>
+        <li class="modlist-clear"><a href="#" class="link slink">text</a></li>
+        <li><a class="link slink">text sfsdfsd</a></li>
+        <li><a class="link slink">text sfsdfsd</a></li>
+    </ul>    
+</body>
+</html>
